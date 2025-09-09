@@ -45,7 +45,10 @@
 
                 <div class="links">
                     <!-- زر فتح المنيو في الموبايل -->
-                    <i class="fa-solid fa-list list" style="cursor: pointer; font-size: 22px"></i>
+                    <button type="button" class="list" style="cursor: pointer; font-size: 22px"
+                        aria-label="Open mobile menu">
+                        <i class="fa-solid fa-list" aria-hidden="true"></i>
+                    </button>
 
                     <ul class="ul-links flex flex-row justify-between items-center gap-8">
                         <li><a href="#home">Home</a></li>
@@ -430,11 +433,11 @@
             <div class="footer-bottom">
                 <p>Follow me on:</p>
                 <a href="https://github.com/Ahmed-C0der" target="_blank">
-                    <i class="fa-brands fa-github"></i></i> GitHub
+                    <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
                 </a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" aria-label="Linkedin"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
             </div>
         </div>
     </footer>
