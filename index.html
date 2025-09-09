@@ -45,7 +45,10 @@
 
                 <div class="links">
                     <!-- زر فتح المنيو في الموبايل -->
-                    <i class="fa-solid fa-list list" style="cursor: pointer; font-size: 22px"></i>
+                    <button type="button" class="list" style="cursor: pointer; font-size: 22px"
+                        aria-label="Open mobile menu">
+                        <i class="fa-solid fa-list" aria-hidden="true"></i>
+                    </button>
 
                     <ul class="ul-links flex flex-row justify-between items-center gap-8">
                         <li><a href="#home">Home</a></li>
@@ -83,28 +86,31 @@
                 class="reserve w-2/3 bg-white p-6 relative flex flex-wrap rounded-r-md gap-4 md:flex-row flex-col z-10">
                 <div class="planes flex flex-wrap md:flex-row flex-col gap-6 w-full">
                     <div class="box Destination flex flex-col w-full md:w-auto">
-                        <span>Destination</span>
-                        <select class="destination-select border border-solid border-stone-500 p-2 rounded">
+                        <label for="destination-select">Destination</label>
+                        <select class="destination-select border border-solid border-stone-500 p-2 rounded"
+                            id="destination-select">
                             <!-- we will add it with js -->
                         </select>
                     </div>
                     <div class="box flex flex-col w-full md:w-auto">
-                        <span>Person</span>
-                        <select class="border border-solid border-stone-500 p-2 rounded">
+                        <label for="person-select">Person</label>
+                        <select class="border border-solid border-stone-500 p-2 rounded" id="person-select">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
                         </select>
                     </div>
                     <div class="box check-in flex flex-col w-full md:w-auto">
-                        <span>Check in</span>
-                        <select class="check-in-select border border-solid border-stone-500 p-2 rounded">
+                        <label for="check-in-select">Check in</label>
+                        <select class="check-in-select border border-solid border-stone-500 p-2 rounded"
+                            id="check-in-select">
                             <!-- I will add it with js -->
                         </select>
                     </div>
                     <div class="box check-out flex flex-col w-full md:w-auto">
-                        <span>Check out</span>
-                        <select class="check-out-select border border-solid border-stone-500 p-2 rounded">
+                        <label for="check-out-select">Check out</label>
+                        <select class="check-out-select border border-solid border-stone-500 p-2 rounded"
+                            id="check-out-select">
                             <!-- I will add it with js -->
                         </select>
                     </div>
@@ -430,11 +436,11 @@
             <div class="footer-bottom">
                 <p>Follow me on:</p>
                 <a href="https://github.com/Ahmed-C0der" target="_blank">
-                    <i class="fa-brands fa-github"></i></i> GitHub
+                    <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
                 </a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" aria-label="Linkedin"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
             </div>
         </div>
     </footer>
